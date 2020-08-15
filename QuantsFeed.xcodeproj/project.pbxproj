@@ -13,6 +13,10 @@
 		18CC638524E7D72F005A3BDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CC638324E7D72F005A3BDB /* Main.storyboard */; };
 		18CC638724E7D731005A3BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CC638624E7D731005A3BDB /* Assets.xcassets */; };
 		18CC638A24E7D731005A3BDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CC638824E7D731005A3BDB /* LaunchScreen.storyboard */; };
+		18DCC08524E7DB4C00CF2F20 /* FeedsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DCC08424E7DB4C00CF2F20 /* FeedsTableViewCell.swift */; };
+		18DCC08824E7E13200CF2F20 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DCC08724E7E13200CF2F20 /* APIManager.swift */; };
+		18DCC08A24E7E17D00CF2F20 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DCC08924E7E17D00CF2F20 /* FeedModel.swift */; };
+		18DCC08D24E7FC0700CF2F20 /* Simulator Screen Shot - iPhone 8 - 2020-08-15 at 04.17.48.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DCC08C24E7FC0700CF2F20 /* Simulator Screen Shot - iPhone 8 - 2020-08-15 at 04.17.48.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		18CC638624E7D731005A3BDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18CC638924E7D731005A3BDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18CC638B24E7D731005A3BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18DCC08424E7DB4C00CF2F20 /* FeedsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsTableViewCell.swift; sourceTree = "<group>"; };
+		18DCC08724E7E13200CF2F20 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		18DCC08924E7E17D00CF2F20 /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		18DCC08C24E7FC0700CF2F20 /* Simulator Screen Shot - iPhone 8 - 2020-08-15 at 04.17.48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 8 - 2020-08-15 at 04.17.48.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 		18CC637C24E7D72F005A3BDB /* QuantsFeed */ = {
 			isa = PBXGroup;
 			children = (
+				18DCC08B24E7FBFB00CF2F20 /* Screenshot */,
+				18DCC08624E7E11D00CF2F20 /* Model */,
+				18DCC08324E7DB2100CF2F20 /* Cell */,
+				18DCC08124E7DAE800CF2F20 /* APIManager */,
 				18CC637D24E7D72F005A3BDB /* AppDelegate.swift */,
 				18CC637F24E7D72F005A3BDB /* SceneDelegate.swift */,
 				18CC638124E7D72F005A3BDB /* ViewController.swift */,
@@ -65,6 +77,38 @@
 				18CC638B24E7D731005A3BDB /* Info.plist */,
 			);
 			path = QuantsFeed;
+			sourceTree = "<group>";
+		};
+		18DCC08124E7DAE800CF2F20 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				18DCC08724E7E13200CF2F20 /* APIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		18DCC08324E7DB2100CF2F20 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				18DCC08424E7DB4C00CF2F20 /* FeedsTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		18DCC08624E7E11D00CF2F20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18DCC08924E7E17D00CF2F20 /* FeedModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18DCC08B24E7FBFB00CF2F20 /* Screenshot */ = {
+			isa = PBXGroup;
+			children = (
+				18DCC08C24E7FC0700CF2F20 /* Simulator Screen Shot - iPhone 8 - 2020-08-15 at 04.17.48.png */,
+			);
+			path = Screenshot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +169,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18DCC08D24E7FC0700CF2F20 /* Simulator Screen Shot - iPhone 8 - 2020-08-15 at 04.17.48.png in Resources */,
 				18CC638A24E7D731005A3BDB /* LaunchScreen.storyboard in Resources */,
 				18CC638724E7D731005A3BDB /* Assets.xcassets in Resources */,
 				18CC638524E7D72F005A3BDB /* Main.storyboard in Resources */,
@@ -139,6 +184,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				18CC638224E7D72F005A3BDB /* ViewController.swift in Sources */,
+				18DCC08A24E7E17D00CF2F20 /* FeedModel.swift in Sources */,
+				18DCC08524E7DB4C00CF2F20 /* FeedsTableViewCell.swift in Sources */,
+				18DCC08824E7E13200CF2F20 /* APIManager.swift in Sources */,
 				18CC637E24E7D72F005A3BDB /* AppDelegate.swift in Sources */,
 				18CC638024E7D72F005A3BDB /* SceneDelegate.swift in Sources */,
 			);
